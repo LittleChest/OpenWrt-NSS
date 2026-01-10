@@ -48,6 +48,7 @@ endef
 # 1: destination file
 define FeedSourcesAppendAPK
 ( \
+  echo 'https://openwrt.littlew.top/packages.adb'; \
   echo '%U/targets/%S/packages/packages.adb'; \
   $(strip $(if $(CONFIG_PER_FEED_REPO), \
 	echo '%U/packages/%A/base/packages.adb'; \
